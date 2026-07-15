@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+overflow:hidden;
+
+background:linear-gradient(-45deg,#6a11cb,#8b5cf6,#9ca3af,#4b5563);
+
+background-size:400% 400%;
+
+animation:bg 12s ease infinite;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+.circle{
+
+position:absolute;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+animation:float 15s infinite linear;
+
+}
+
+.c1{
+
+width:230px;
+height:230px;
+top:5%;
+left:5%;
+
+}
+
+.c2{
+
+width:170px;
+height:170px;
+bottom:10%;
+right:10%;
+
+}
+
+.c3{
+
+width:120px;
+height:120px;
+top:60%;
+left:30%;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0) rotate(0deg);
+}
+
+50%{
+transform:translateY(-40px) rotate(180deg);
+}
+
+100%{
+transform:translateY(0) rotate(360deg);
+}
+
+}
+
+.login-box{
+
+width:380px;
+
+padding:45px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+border-radius:25px;
+
+box-shadow:0 10px 40px rgba(0,0,0,.3);
+
+border:1px solid rgba(255,255,255,.2);
+
+animation:show 1s;
+
+z-index:10;
+
+}
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.login-box h1{
+
+color:white;
+
+text-align:center;
+
+font-size:35px;
+
+margin-bottom:8px;
+
+}
+
+.login-box p{
+
+text-align:center;
+
+color:white;
+
+margin-bottom:30px;
+
+}
+
+.input-box{
+
+position:relative;
+
+margin-bottom:20px;
+
+}
+
+.input-box i{
+
+position:absolute;
+
+top:16px;
+
+left:18px;
+
+color:white;
+
+}
+
+.input-box input{
+
+width:100%;
+
+padding:15px 15px 15px 45px;
+
+border:none;
+
+outline:none;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.2);
+
+color:white;
+
+font-size:15px;
+
+transition:.3s;
+
+}
+
+.input-box input::placeholder{
+
+color:white;
+
+}
+
+.input-box input:focus{
+
+background:rgba(255,255,255,.3);
+
+transform:scale(1.02);
+
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:50px;
+
+background:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+color:#6a11cb;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+button:hover{
+
+background:#6a11cb;
+
+color:white;
+
+transform:translateY(-5px);
+
+box-shadow:0 0 20px #fff;
+
+}
